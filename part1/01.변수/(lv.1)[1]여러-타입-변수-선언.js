@@ -11,13 +11,13 @@
  *  7) null 값 변수 nul을 선언 후, null을 할당하세요.
  */
 
-let num;
-let str;
-let bool;
-let arr;
-let obj;
-let undef;
-let nul;
+let num = 4;
+let str = "four";
+let bool = true;
+let arr = [1, 2, 3];
+let obj = {name: Sohyeon, age: 12};
+let undef = four;
+let nul = "";
 
 // export 를 수정하지 마세요.
 export { num, str, bool, arr, obj, undef, nul };

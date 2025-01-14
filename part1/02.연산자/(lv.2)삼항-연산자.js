@@ -11,7 +11,7 @@
  */
 
 function ternaryOperator(age) {
-  let data = "";
+  let data = (age < 20 && age >= 10)? "10대": "10대가 아닙니다!";
   // TODO: 삼항연산자를 사용해 data 변수에 알맞은 값을 할당하세요.
 
   return data;

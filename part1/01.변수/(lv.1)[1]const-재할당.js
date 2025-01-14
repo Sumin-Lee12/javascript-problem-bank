@@ -8,6 +8,8 @@
 
 function reassignConst() {
   // TODO
+  const name = 29;
+  name = 42;
 }
 
 // export 를 수정하지 마세요.

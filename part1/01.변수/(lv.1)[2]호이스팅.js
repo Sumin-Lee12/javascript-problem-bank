@@ -8,9 +8,10 @@
 
 function hoistingTest() {
   // TODO:
-  //      console.log(d);
-  //       var d = 5;
-  //      console.log(d);
+  var d;
+  console.log(d);
+  d = 5;
+  console.log(d);
 }
 
 // export 를 수정하지 마세요.
