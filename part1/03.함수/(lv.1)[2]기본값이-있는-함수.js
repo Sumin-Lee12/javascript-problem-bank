@@ -10,7 +10,11 @@
  */
 
 function introduce(name, age) {
-  // TODO
+  if (age === true) {
+    return `안녕하세요! 저는 ${name}, 나이는 ${age}입니다.`;
+  } else {
+    return "비공개";
+  }
 }
 
 // export 를 수정하지 마세요.
