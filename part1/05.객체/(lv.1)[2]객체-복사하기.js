@@ -14,7 +14,10 @@ const obj = {
 };
 
 // TODO: spread 연산자를 이용하여 obj를 복사하고, age를 1 늘려주세요.
-const newObj = {};
+const newObj ={
+  ...obj,  //기존의 obj의 모든 속성을 복사
+  age: obj.age += 1 // age속성에만 +1
+};
 
 // export 를 수정하지 마세요.
 export { obj, newObj };

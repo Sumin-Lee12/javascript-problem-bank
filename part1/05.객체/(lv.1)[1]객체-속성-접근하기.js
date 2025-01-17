@@ -15,9 +15,9 @@ const person = {
 };
 
 const person2 = {
-  name: "짱구",
-  age: 
-};
+  name: person.name,
+  age: person.age + 1
+}
 
 // export를 수정하지 마세요.
 export { person, person2 };
