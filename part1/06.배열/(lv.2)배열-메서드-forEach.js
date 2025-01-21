@@ -10,7 +10,14 @@
  * @returns {number} 배열 원소의 합
  */
 function sumArray(arr) {
-  // TODO
+  if(arr.length === 0) {
+    return 0;
+  };
+  let sum = 0;
+  arr.forEach(el => {
+    sum += el;
+  });
+  return sum;
 }
 
 // export를 수정하지 마세요.

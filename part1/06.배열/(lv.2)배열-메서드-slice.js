@@ -1,3 +1,5 @@
+import { findIndexOf } from "./(lv.2)배열-메서드-find";
+
 /**
  * [(lv.2)배열-메서드-slice.js]
  *
@@ -13,7 +15,7 @@
  * @returns {any[]} 잘려진 새 배열
  */
 function subArray(arr, start, end) {
-  // TODO
+  return arr.slice(start, end); // end가 없으면 .slice는 자동으로 배열의 끝까지 잘라서 변환한다.
 }
 
 // export를 수정하지 마세요.
