@@ -17,7 +17,11 @@
  *
  * @returns {number}
  */
-function skipAndStop() {}
+function skipAndStop() {
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+  }
+}
 
 // export를 수정하지 마세요.
 export { skipAndStop };
