@@ -18,8 +18,18 @@
  * @returns {number}
  */
 function skipAndStop() {
-  for (let i = 0; i < array.length; i++) {
-    const element = array[i];
+  let sum = 0;
+
+  for (let i = 1; i <= 10; i++) {
+    if (i > 7) {
+      break;
+    } else {
+      if (i % 2 === 0) {
+        continue;
+      } else {
+        sum += i;
+      }
+    }
   }
 }
 
