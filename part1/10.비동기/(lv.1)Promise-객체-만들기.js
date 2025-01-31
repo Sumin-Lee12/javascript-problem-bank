@@ -11,5 +11,17 @@
 let resolvePromise;
 let rejectPromise;
 
+function resolvePromise() {
+  return newPromise((resolve) => {
+    resolve ("Hello");
+  })
+}
+
+function rejectPromise() {
+  return newPromise((resolve) => {
+    resolve ("Error!")
+  })
+}
+
 // export를 수정하지 마세요.
 export { resolvePromise, rejectPromise };
