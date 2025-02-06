@@ -21,7 +21,15 @@
 // }
 
 // TODO: getUsers 함수를 작성하세요.
-async function getUsers(fetchUsers) {}
+async function getUsers(fetchUsers) {
+  try {
+    const data = await fetchUsers();
+    const newArray = await data.name;
+    return newArray; 
+  } catch (error) {
+    console.error(error);
+  }
+}
 
 // export를 수정하지 마세요.
 export { getUsers };

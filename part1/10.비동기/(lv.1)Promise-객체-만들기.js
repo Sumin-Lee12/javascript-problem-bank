@@ -18,8 +18,8 @@ function resolvePromise() {
 }
 
 function rejectPromise() {
-  return newPromise((resolve) => {
-    resolve ("Error!")
+  return newPromise((reject) => {
+    reject ("Error!");
   })
 }
 

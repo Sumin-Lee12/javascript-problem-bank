@@ -14,9 +14,9 @@ function returnFive() {
 }
 
 // TODO: getValueThenDouble 함수를 작성하세요.
-async function getValueThenDouble() {
+async function getValueThenDouble(num) {
   return new Promise((resolve) => {
-    
+    resolve (num * 2);
   })
 }
 

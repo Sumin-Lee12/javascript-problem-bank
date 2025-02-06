@@ -1,3 +1,5 @@
+import { resolvePlugin } from "@babel/core";
+
 /**
  * [(lv.2)로그인-확인-함수.js]
  *
@@ -10,7 +12,15 @@
  * @param {string} pw
  * @returns {Promise<string>} "ok" 또는 "fail"
  */
-function loginRequest(id, pw) {}
+function loginRequest(id, pw) {
+  return new Promise((resolve, reject) => {
+    if (id === "admin" && pw === "1234") {
+      resolve("ok");
+    }else {
+      reject("fail");
+    }
+  })
+}
 
 // export를 수정하지 마세요.
 export { loginRequest };
