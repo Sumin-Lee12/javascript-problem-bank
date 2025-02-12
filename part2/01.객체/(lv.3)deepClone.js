@@ -9,8 +9,9 @@
  */
 
 function deepClone(obj) {
-  if 
-  
+  const copiedArray = JSON.parse(JSON.stringify(obj))
+
+  return copiedArray;  
 }
 
 // export 를 수정하지 마세요.
