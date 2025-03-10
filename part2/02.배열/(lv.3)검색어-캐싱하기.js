@@ -16,13 +16,24 @@
 let topKeywordsCache = [];
 
 function updateTopKeywords(keywords) {
-  // TODO
+  let topKeywords = [];
+  // 키워드 언급 횟수 계산
+  const keywordCount = keywords.reduce((acc, item) => {
+    acc[item] = (acc[item] || 0) + 1;
+    return acc;
+  }, {});
+
+  // 2. 객체를 배열로 변환 & 정렬
+  topKeywords = Object.entries(keywordCount)
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])) // 빈도 우선, 동일하면 사전순
+    .map(entry => entry[0]) // 키워드 추출
+    .slice(0, 10); // 상위 10개 저장
 }
 
 function getTopKeywords() {
-  // TODO
-  return [];
+  return topKeywords;
 }
+
 
 // export를 수정하지 마세요.
 export { topKeywordsCache, updateTopKeywords, getTopKeywords };
