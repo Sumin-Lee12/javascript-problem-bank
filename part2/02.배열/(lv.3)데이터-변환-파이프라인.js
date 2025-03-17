@@ -14,7 +14,19 @@
  * @returns {number[]} 변환된 배열
  */
 
-function transformData(arr, threshold) {}
+function transformData(arr, threshold) {
+  if (arr === null || arr === undefined) {
+    return [];
+  }
+  const arraryForTesting = [...arr];
+  const filteredEvenNums = (arraryForTesting || []).filter(
+    (num) => num % 2 === 0
+  );
+  const squaredNums = filteredEvenNums.map((e) => e * e);
+  const numsUnderThreshold = squaredNums.filter((num) => num < threshold);
+  const fromLgToSm = numsUnderThreshold.sort((a, b) => b - a);
+  return fromLgToSm;
+}
 
 // export 를 수정하지 마세요.
 export { transformData };
